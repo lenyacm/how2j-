@@ -8,5 +8,9 @@ public class HelloWorld {
     
     public static void main(String[] args) {
     	new HelloWorld().method1(4);
+    	int i = 1;
+    	boolean b = !(i++ == 3) ^ (i++ ==2) && (i++==3);
+    	System.out.println(b);
+    	System.out.println(i);
     }
 }
