@@ -1,16 +1,17 @@
 package how2j;
 
+import java.util.Arrays;
+
 public class HelloWorld {
-	 
-    public void method1(final int j) {
-        //j = 5; //cannot be assigned
-    }
     
     public static void main(String[] args) {
-    	new HelloWorld().method1(4);
-    	int i = 1;
-    	boolean b = !(i++ == 3) ^ (i++ ==2) && (i++==3);
-    	System.out.println(b);
-    	System.out.println(i);
+    	int a[] = new int[] { 18, 62, 62, 62, 65, 9 };
+        
+        Arrays.sort(a);
+ 
+        System.out.println(Arrays.toString(a));
+        //使用binarySearch之前，必须先使用sort进行排序
+        System.out.println("数字 62出现的位置:"+Arrays.binarySearch(a, 62));
+       
     }
 }
